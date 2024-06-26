@@ -1,4 +1,4 @@
-## Hi there 👋
+## personal website in progess
 
 <!--
 **ananyabalagere/ananyabalagere** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
