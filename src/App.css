@@ -1,42 +1,72 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* max-width: 1280px; */
+  margin: auto;
+  /* padding: 2rem; */
+  /* text-align: center; */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+body {
+  background-color: #e8dcca;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  letter-spacing: 0.05em;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.terminal {
+  position: absolute;
+  top: 0%;
+  left: 1%;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: sub;
+  gap: 10px;
+  text-align: start;
+  margin-bottom: 5px;
 }
-
-@keyframes logo-spin {
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: .6em; The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /* margin: 0;  Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em;
+  
+  animation:
+    typing 2s steps(10, end),
+    terminal_cursor 2s step-end;
+}
+@keyframes typing {
+  from {width: 0;}
+  to {width: 30%;}
+}
+@keyframes terminal_cursor {
   from {
-    transform: rotate(0deg);
+    border-color: black;
+    border-right: 0.6em solid;
   }
   to {
-    transform: rotate(360deg);
+    border-color: transparent;
   }
 }
+.response1 {
+  margin-top: 0;
+  width: 400px;
+  overflow: hidden;
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  animation:
+    popup 2.5s step-end;
+}
+@keyframes popup {
+  from {
+    display:none;
+  }
+  to {
+    display: inline;
   }
 }
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+#next {
+  animation:
+    popup 2.5s step-end;
 }

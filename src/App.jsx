@@ -1,33 +1,38 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import githubLogo from './icons/github.svg';
+import linkedinLogo from './icons/linkedin.svg';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='terminal'>
+      <div className='bashprompt' id='name'>
+        <p>portfolio:~$</p>
+        <p className='typewriter'>./ananyabalagere</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+      <div className='response1'>
+        <p>Hello! My name is Ananya Balagere and I am an undergraduate student at the University of California,
+          Santa Cruz. I study Computer Science and Mathematics. </p>
+          <p className='instructions'>Welcome to my personal website!
+          To interact with it, you may type in a set of commands: <br/>
+          Type <code className='code'>ls</code> to list the view the different pages in the site
+          or the name of the page to navigate to that page. <br/>
+          Type <code className='code'>skip</code> to skip ahead to the home page.
+          Type <code className='code'>help</code> to see this message again.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div>
+        <textarea>portfolio:~$</textarea>
+      </div>
+      <div className='bashprompt' id='next'>
+        <p>portfolio:~$</p>
+        <p className='typewriter'></p>
+      </div>
+    </div>
+      
     </>
   )
 }
