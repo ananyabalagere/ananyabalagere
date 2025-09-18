@@ -10,14 +10,20 @@ body {
   color: #000000;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
-  letter-spacing: 0.05em;
+  font-size: 85%;
+  letter-spacing: 0.03em;
 }
-.terminal {
-  position: absolute;
+.card {
+  position: relative;
   top: 0%;
-  left: 1%;
+  text-align: center;
+  display: inline-flex;
 }
-#name {
+.me {
+  height: 200px;
+  width: 200px;
+}
+/* #name {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -25,7 +31,7 @@ body {
   gap: 10px;
   text-align: start;
   margin-bottom: 5px;
-}
+} */
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   /* border-right: .6em; The typwriter cursor */
@@ -50,13 +56,24 @@ body {
     border-color: transparent;
   }
 }
-.response1 {
+.intro {
   margin-top: 0;
   width: 400px;
-  overflow: hidden;
 
-  animation:
-    popup 2.5s step-end;
+  /* animation:
+    popup 2.5s step-end; */
+}
+.links {
+  display:inline-flex;
+  gap: 25px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.ucsc {
+  text-indent: 5%;
+  width: 500px;
+  line-gap-override: 50px;
+  font-weight: 500;
 }
 @keyframes popup {
   from {
