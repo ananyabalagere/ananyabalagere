@@ -7,6 +7,7 @@ function Experience() {
     <p>EXPERIENCE</p>
     <p>Amazon</p>
     <p>Apple</p>
+    <p>Disorderly Labs</p>
     </>
   );
 }
