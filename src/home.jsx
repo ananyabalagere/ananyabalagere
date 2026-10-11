@@ -1,7 +1,6 @@
 import './App.css'
 import { Link } from 'react-router-dom'
 import me from './me_in_brooklyn.jpeg'
-import { EDUCATION, EXPERIENCE } from './paths.jsx'
 
 function Home() {
   return (
