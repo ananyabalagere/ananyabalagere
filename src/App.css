@@ -18,10 +18,11 @@ body {
   top: 0%;
   text-align: center;
   display: inline-flex;
+  gap: 20px;
 }
 .me {
   height: 200px;
-  width: 200px;
+  width: 260px;
 }
 /* #name {
   display: flex;
@@ -59,7 +60,7 @@ body {
 .intro {
   margin-top: 0;
   width: 400px;
-
+  font-weight: 500;
   /* animation:
     popup 2.5s step-end; */
 }
@@ -69,10 +70,13 @@ body {
   cursor: pointer;
   text-decoration: underline;
 }
-.ucsc {
+.education {
   text-indent: 5%;
-  width: 500px;
   line-gap-override: 50px;
+  font-weight: 500;
+}
+.experience {
+  /* line-gap-override: 50px; */
   font-weight: 500;
 }
 @keyframes popup {
