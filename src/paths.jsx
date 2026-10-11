@@ -1,4 +1,4 @@
-const HOME="/ananyabalagere/";
+const HOME="/";
 const EDUCATION = HOME + "education";
 const EXPERIENCE = HOME + "experience";
 
