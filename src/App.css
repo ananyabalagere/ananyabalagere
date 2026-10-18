@@ -69,6 +69,7 @@ body {
   gap: 25px;
   cursor: pointer;
   text-decoration: underline;
+  align-items: center;
 }
 .icon {
   height: 23px;
@@ -82,6 +83,10 @@ body {
 .experience {
   /* line-gap-override: 50px; */
   font-weight: 500;
+}
+.cv {
+  text-decoration: underline;
+  color: black;
 }
 @keyframes popup {
   from {

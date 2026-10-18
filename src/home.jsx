@@ -13,8 +13,9 @@ function Home() {
       <img src={me} className='me'/>
         <div className='intro'>
           <p> Hello! I'm Ananya Balagere, and I'm a graduate student at UCSD studying Computer Science.
-            I enjoy being creative, designing systems, and learning about new technologies.
+            I enjoy networked systems, art, and learning new things.
           </p>
+          <p>Email: abalagere@ucsd.edu</p>
           <div className='links'>
             <a href='https://www.linkedin.com/in/ananya-balagere/' target='_blank' rel='noopener noreferrer'>
               <img src={linkedinLogo} alt='linkedin' className='icon'/>
@@ -22,7 +23,7 @@ function Home() {
             <a href='https://github.com/ananyabalagere' target='_blank' rel='noopener noreferrer'>
               <img src={githubLogo} alt='github' className='icon'/>
             </a>
-            <a href={cv} target='_blank' rel='noopener noreferrer'>CV</a>
+            <a href={cv} target='_blank' rel='noopener noreferrer' className='cv'>CV</a>
 
             {/* <p className='playground'>playground</p> */}
           </div>
@@ -51,8 +52,6 @@ function Home() {
         <div className='experience'>
           <p>Software Engineering Intern, June - September 2025</p>
         </div>
-        
-        
     </>
   )
 }
